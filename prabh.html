@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="prabh.css" />
+    <title>Registraion Form</title>
+  </head>
+  <body class=" bg-[#0e2e50]  h-screen">
+    
+    <!-- main container -->
+    <center><div><h1 class="text-center text-4xl font-bold mt-5 text-[#00b98e]" style="color: aliceblue;">Registration Form</h1></div></center>
+    <div class="max-w-[1300px] mx-auto bg-[#00b98e] mt-9 rounded-lg">
+      <div class="flex justify-between p-7 shadow-md">
+        <div class="md:flex items-center">
+          <div class="text-[#fcf6f5ff] text-2xl  mr-10"><a href="#"></a></div>
+          <h1 class="text-[#fcf6f5ff] text-2xl md:text-3xl font-bold" style="color: aliceblue;">Name: Prabhleen Kaur</h1>
+          <h2 class="text-[#fcf6f5ff] text-2xl md:text-3xl font-bold" style="color: aliceblue;">Class: 8<sup>th</sup>-A</h2>
+        </div>
+        <nav class="hidden md:block">
+        </nav>
+      </div>
+    </div>
+    <!-- instruction part -->
+    <div class="max-w-[1300px] mx-auto mt-7 md:mt-14  rounded-lg text-white text-xl md:text-2xl px-8 shadow-md md:grid md:grid-cols-2">
+      <div class="bg-[#00b98e] h-screen rounded-2xl shadow-xl my-8">
+      <div>
+        <h1 class="text-center text-2xl md:text-4xl mb-7 font-bold pt-4">
+          Read Instructions Carefully
+        </h1>
+      </div>
+      <div>
+        <ul class="pb-7 px-4">
+          <li class="mb-4">1. All fields are compulsory to fill.</li>
+          <li class="mb-4">
+            2. Please enter correct mobile number, it is necessary for
+            registration verification.
+          </li>
+          <li class="mb-4">
+            3. You can use mobile number only once for registration
+          </li>
+          <li class="mb-4">
+            4. Please Enter your registered mobile number for OTP verification
+          </li>
+          <li class="mb-4">
+            5. Your username, Password will sent to your registered email id
+          </li>
+          <li class="mb-4">6. Only registered users can login to portal</li>
+          <li class="text-center">
+            Already Registered
+            <a class='text-[#0e2e50] text-2xl ml-5 underline ' href='/login' target='_blank'>Login</a
+            >
+          </li>
+        </ul>
+        <div class="text-center pb-5">
+          <label for="emptype" class="text-[#fcf6f5ff] font-bold "
+            >Select for which type you applying :</label
+          >
+          <select name="employment" id="emptype" class="rounded-lg md:px-3 mt-2 text-black">
+            <option value="">Select</option>
+            <option value="Jobseeker">Jobseeker</option>
+            <option value="Gigjob">Independent Worker(GigJob)</option>
+            <option value="skillinitiave">Skill development intiative</option>
+            <option value="Foreign counselling">
+              Foreign counselling intiative
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div id="jobform">
+      <br>
+      <br>
+      <form class="grid place-content-center ps-5 pb-10  bg-[#77b2b6]  rounded-2xl shadow-lg mt-6" id='form1' >
+        <div class=" my-5 md:flex md:flex-col md:gap-y-4">
+          <label for="fname" class="text-[#0e2e50] ">Enter your first name</label>
+          <input type="text" placeholder="Enter  your first name" id="fname" class=" w-[15rem] md:w-[30rem] rounded-lg px-3 py-1"/>
+          <span id="namemsg" class="block text-red-500 text-sm"></span>
+        </div>
+        <div class=" mb-5 md:flex md:flex-col md:gap-y-4">
+          <label for="Lname" class="text-[#0e2e50] ">Enter your last name</label>
+          <input type="text" placeholder="Enter  your last name" class=" w-[15rem] md:w-[30rem] rounded-lg px-3 py-1" />
+        </div>
+        <div class="mb-5 md:flex md:flex-col md:gap-y-4">
+          <label for="aadharnumber" class="text-[#0e2e50]">Enter your aadhar number</label>
+          <input type="tel" id="adnumber" placeholder="Enter 12 digit aadhar number"  class="text-xl w-[15rem] md:w-[30rem] py-2 rounded-lg px-3">
+          <span id="admsg" class="block text-red-500 text-sm"></span>
+
+        </div>
+        <div class=" mb-5 md:flex md:flex-col md:gap-y-4 text-[#0e2e50]">
+          <label for="gender" class="text-[#0e2e5e0] text-2xl">Please select your gender:</label>
+          <div>
+          <input type="radio" name="gender" id="male"  /><span class="ms-3">Male</span>
+          <input type="radio" name="gender" id="female" class=" ms-5"/><span class="ms-3">Female</span>
+          <input type="radio" name="gender" id="others" class=" ms-5"/><span class="ms-3">Others</span>
+      </div>
+        </div>
+        <div class=" mb-5">
+          <label for="education" class="text-[#0e2e50] text-2xl">Select highest education</label>
+          <select name="studies" id="education" class="px-3 text-xl py-1 text-[#44565F] rounded-lg">
+            <option value="">Select Education Level</option>
+            <option value="1">No Schooling</option>
+            <option value="2">5th</option>
+            <option value="3">8th</option>
+            <option value="4">10th</option>
+            <option value="5">12th</option>
+            <option value="6">Diploma After 10th</option>
+            <option value="7">Diploma After 12th</option>
+            <option value="8">ITI</option>
+            <option value="9">Graduate</option>
+            <option value="10">PG Diploma</option>
+            <option value="11">Post Graduate</option>
+            <option value="12">M Phill</option>
+            <option value="13">Phd</option>
+          </select>
+        </div>
+        <div class="mb-5" >
+          <label for="district" class="text-[#0e2e50] text-2xl">Select your district</label>
+          <select name="location" id="district" class="px-3 text-xl py-1 text-[#44565F] rounded-lg">
+            <option value="10">Select District</option>
+            <option value="20">Amritsar</option>
+            <option value="30">Barnala</option>
+            <option value="40">Bathinda</option>
+            <option value="50">Faridkot</option>
+            <option value="60">Fatehgarh Sahib</option>
+            <option value="70">Fazilka</option>
+            <option value="80">Ferozepur</option>
+            <option value="90">Gurdaspur</option>
+            <option value="100">Hoshiarpur</option>
+            <option value="110">Jalandhar</option>
+            <option value="120">Kapurthala</option>
+            <option value="130">Ludhiana</option>
+            <option value="140">Malerkotla</option>
+            <option value="150">Mansa</option>
+            <option value="160">Moga</option>
+            <option value="170">Muktsar</option>
+            <option value="180">Pathankot</option>
+            <option value="190">Patiala</option>
+            <option value="200">Rupnagar</option>
+            <option value="210">Sangrur</option>
+            <option value="220">SAS Nagar and Chandigarh</option>
+            <option value="230">SBS Nagar</option>
+          </select>
+        </div>
+        <div class="mb-5 md:flex md:flex-col md:gap-y-4">
+          <label for="email" class="text-[#0e2e50]">Enter your email </label>
+          <input type="text" id="email" placeholder="Enter your email" class="text-xl w-[18rem] md:w-[30rem] rounded-lg py-2 px-3">
+          <span id="emailmsg" class="block text-red-500 text-sm"></span>
+
+        </div>
+        <div class="mb-5 md:flex md:flex-col md:gap-y-4">
+          <label for="mobilenumber" class="text-[#0e2e50]">Enter your registered mobile number</label>
+          <input type="tel" pattern="[0-9]{10}" maxlength="10" placeholder="10 digit mobile number" class="text-xl w-[15rem] md:w-[30rem] rounded-lg py-2 px-3">
+          <span id="namemsg" class="block text-red-500 text-sm"></span>
+        </div>
+        <div class="text-[#0e2e50] mb-5 md:flex md:flex-col md:gap-y-4">
+          <label for="message" >I agree to get updates in future from portal</label>
+          <div>
+          <input type="radio" name="response" id="yes"><span class="ms-3">Yes</span>
+          <input type="radio" name="response" id="no" class="ms-5"><span class="ms-3">No</span>
+      </div>
+        </div>
+        <div class="text-[#0e2e50] flex items-center ">
+          <input type="checkbox" name="condition" id="terms_condition">
+          <label for="terms_condition" class="cursor-pointer ms-4" >I agree all terms and condition before registring to portal</label>
+        </div>
+        <h2><button class=" button mt-5 bg-[#0e2e50] py-2 px-3 rounded-lg w-[270px] md:w-[350px] text-teal-100" style="color: aliceblue;">Submit</button></h2>
+      </form>
+    </div>
+    </div>
+    <!-- Form Parts -->
+    <!-- <div class="max-w-[1300px] mx-auto mt-14 text-xl md:text-2xl px-5 md:px-8 shadow-lg border " >
+      </div> -->
+    <footer class="max-w-[1300px] mx-auto mt-14">
+
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
